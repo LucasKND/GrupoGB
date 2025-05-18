@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo GB - Institucional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>    <!-- Hero Section with Navigation Bar -->
+    <section class="hero-section" id="hero">        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Grupo GB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>        <!-- Hero Carousel -->
+        <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/refeitorio.webp" class="d-block w-100" alt="Serviço de Alimentação Privativa">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/clean.webp" class="d-block w-100" alt="Serviço de Limpeza">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/jardim.webp" class="d-block w-100" alt="Gestão de Condomínio">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <!-- Hero Overlay -->
+        <div class="hero-overlay"></div>        <!-- Hero Content -->
+        <div class="container hero-content">
+            <h1>Bem-vindo ao Grupo GB</h1>
+            <p>Soluções completas em alimentação privativa, serviço de limpeza, jardinagem, portaria e gestão de condomínio. Excelência e qualidade para o seu espaço.</p>
+            <a href="#contact" class="hero-btn">Entre em Contato</a>        </div>
+    </section>
+     
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas para empresas e condomínios</p>
+            </div>
+            
+            <div class="row">                <!-- Alimentação Privativa -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/refeitorio.webp" alt="Alimentação Privativa">
+                        </div>                        <div class="service-content">
+                            <h3>Alimentação Privativa</h3>
+                            <p>O Grupo GB conta com uma equipe qualificada para atender as necessidades de cada cliente no preparo e fornecimento de refeições para seus colaboradores. Nossos profissionais tem ampla experiência nesse formato de serviço e são acompanhados por um profissional de nutrição, responsável pela elaboração do cardápio e planejamento nutricional.</p>
+                            <p>O Grupo GB, observando a necessidade de serviços nutricionais, oferece um cardápio personalizado para cada cliente.</p>
+                            <a href="#" class="read-more">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Serviço de Limpeza -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/clean.webp" alt="Serviço de Limpeza">
+                        </div>                        <div class="service-content">
+                            <h3>Serviço de Limpeza</h3>
+                            <p>Equipes treinadas e equipamentos modernos para manter seu espaço impecável. Limpeza regular, profunda e especializada para ambientes comerciais e residenciais.</p>
+                            <p>Nesse sentido, no momento de contratar uma solução terceirizada de limpeza e conservação, é importante que se tenha em vista que a prestadora do serviço deve fornecer uma equipe apta para traçar um cronograma estratégico de limpeza do estabelecimento, considerando a natureza, tamanho e fluxo de pessoas no local.</p>
+                            <a href="#" class="read-more">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gestão de Condomínio -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/jardim.webp" alt="Gestão de Condomínio">
+                        </div>                        <div class="service-content">
+                            <h3>Serviço de Apoio e Gestão Condominial</h3>
+                            <p>Há possibilidade de contratar um síndico profissional. Uma boa contratação também é essencial, já que, apesar de profissional apto para a função, o síndico contratado não isenta o condomínio de nenhum tipo de responsabilidade ou tarefa.</p>
+                            <p>Pelo contrário: é ainda mais importante se manter a par da gestão do condomínio, já que seu administrador maior não será afetado por possíveis arrecadações extras ou pela diminuição do valor do bem, caso esse venha a se desvalorizar por falta de cuidados, por exemplo.</p>
+                            <a href="#" class="read-more">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder for other sections -->
+    <!-- These will be developed in the future with separate CSS and JS files -->
+
+    <!-- Bootstrap JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="script/index.js"></script>
+</body>
+</html>
