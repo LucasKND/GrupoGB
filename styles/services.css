@@ -34,9 +34,12 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
     transition: all 0.3s ease;
     background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card:hover {
@@ -62,21 +65,22 @@
 }
 
 .service-content {
-    padding: 25px;
-    height: auto;
-    min-height: 350px;
+    padding: 15px;
+    height: 100%;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .service-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;  
     color: #333;
-    margin-top: 10px;
+    margin-top: 5px;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 .service-content h3::after {
@@ -91,12 +95,10 @@
 
 .service-content p {
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.5;
 }
-
-/* Ícones removidos - espaço reservado para possíveis estilos futuros */
 
 .read-more {
     display: inline-block;

@@ -1,9 +1,6 @@
-// Services Section JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Add animation effect on scroll
     const serviceCards = document.querySelectorAll('.service-card');
     
-    // Function to check if element is in viewport
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -14,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     }
     
-    // Function to add animation class when element is visible
     function animateOnScroll() {
         serviceCards.forEach(card => {
             if (isInViewport(card) && !card.classList.contains('animated')) {
@@ -23,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
-    
-    // Check on initial load
+
     animateOnScroll();
 });
