@@ -10,4 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const servicesScript = document.createElement('script');
     servicesScript.src = 'script/services.js';
     document.head.appendChild(servicesScript);
+      // Load whatsapp-button.js functionality
+    const whatsappScript = document.createElement('script');
+    whatsappScript.src = 'script/whatsapp-button.js';
+    document.head.appendChild(whatsappScript);
+    
+    // Load contact.js functionality
+    const contactScript = document.createElement('script');
+    contactScript.src = 'script/contact.js';
+    document.head.appendChild(contactScript);
 });

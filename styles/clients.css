@@ -1,0 +1,189 @@
+/* Clients Section Styles */
+.clients-section {
+    background-color: #fff;
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background pattern */
+.clients-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(#f0f0f0 2px, transparent 2px);
+    background-size: 30px 30px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Section title with same styling as other sections */
+.clients-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.clients-section .section-title h2 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.clients-section .section-title h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0056b3, #0088ff);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.clients-section .section-title p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 25px auto 0;
+}
+
+/* Clients container */
+.clients-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Client logo items */
+.client-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.client-logo-inner {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover .client-logo-inner {
+    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.15);
+    transform: translateY(-5px);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 80px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.4s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Trust badge */
+.trust-badge {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 86, 179, 0.05), rgba(0, 136, 255, 0.05));
+    border-radius: 8px;
+    position: relative;
+}
+
+.trust-badge h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.trust-badge p {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accent-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0056b3, #0088ff);
+}
+
+.accent-dot-1 {
+    top: 20px;
+    left: 20px;
+}
+
+.accent-dot-2 {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .clients-section .section-title h2 {
+        font-size: 2.4rem;
+    }
+    
+    .client-logo-inner {
+        height: 130px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .clients-section {
+        padding: 50px 0;
+    }
+    
+    .clients-section .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .client-logo-inner {
+        height: 120px;
+    }
+    
+    .client-logo img {
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    .clients-section .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .trust-badge h3 {
+        font-size: 1.3rem;
+    }
+    
+    .trust-badge p {
+        font-size: 0.95rem;
+    }
+}
