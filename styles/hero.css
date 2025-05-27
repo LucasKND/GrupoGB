@@ -40,7 +40,7 @@
     z-index: 1;
     color: #ffffff;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 40vh;
 }
 
 .hero-content h1 {
@@ -48,6 +48,7 @@
     font-weight: 700;
     margin-bottom: 20px;
     animation: fadeInUp 1s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hero-content p {
@@ -56,34 +57,43 @@
     margin: 0 auto 30px;
     animation: fadeInUp 1s ease 0.3s;
     animation-fill-mode: both;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
 }
 
 .hero-btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 14px 32px;
     background-color: #0056b3;
     color: #ffffff;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
     animation: fadeInUp 1s ease 0.6s;
     animation-fill-mode: both;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-btn:hover {
     background-color: #004494;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
 /* Navbar Styles */
 .navbar {
-    padding: 15px 0;
+    padding: 20px 0;
     transition: all 0.3s ease;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-scrolled {
@@ -114,6 +124,36 @@
     font-size: 1.8rem;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+/* Logo in navbar */
+.navbar-logo {
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)); /* Makes the logo white with shadow */
+    transition: all 0.3s ease;
+}
+
+/* Media queries for logo responsiveness */
+@media (max-width: 991px) {
+    .navbar-logo {
+        height: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-logo {
+        height: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-logo {
+        height: 45px;
+    }
 }
 
 .nav-link {
@@ -142,6 +182,38 @@
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+/* Responsiveness for hero content positioning */
+@media (max-width: 991px) {
+    .hero-content {
+        padding-top: 45vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-content {
+        padding-top: 50vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-content {
+        padding-top: 45vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
 }
 
 /* Animations */
